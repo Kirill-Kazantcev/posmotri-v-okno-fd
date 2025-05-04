@@ -1,0 +1,14 @@
+.result {
+    align-self: flex-end;
+}
+.result__video-container {
+    position: relative;
+    inline-size: 711px;
+    margin: 0 0 11px;
+}
+.result__video {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    object-position: center;
+}
