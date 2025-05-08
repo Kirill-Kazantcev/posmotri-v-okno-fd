@@ -1,9 +1,9 @@
 /* КОНФИГ */
 const preloaderWaitindTime = 1200;
 const cardsOnPage = 5;
-//const BASE_URL = 'https://v-content.practicum-team.ru';
-//const BASE_URL = 'https://7dc2bcb5-fd1c-49c1-93cd-b8a075739564-00-1tpyahcvkleh.worf.replit.dev'; // удалить  5, 6
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = 'https://v-content.practicum-team.ru';
+//const BASE_URL = 'https://7dc2bcb5-fd1c-49c1-93cd-b8a075739564-00-1tpyahcvkleh.worf.replit.dev'; // Серверы
+//const BASE_URL = "http://localhost:3000";
 const endpoint = `${BASE_URL}/api/videos?pagination[pageSize]=${cardsOnPage}&`;
 
 /* ЭЛЕМЕНТЫ СТРАНИЦЫ */
