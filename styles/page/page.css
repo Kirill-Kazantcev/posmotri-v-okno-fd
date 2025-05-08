@@ -1,0 +1,25 @@
+/*Компонентный подход - импортируем блок content*/
+@import url('./content/content.css');
+/*Компонентный подход - импортируем UI элементы*/
+@import url('../UI/button.css');
+@import url('../UI/custom-scrollbar.css');
+@import url('../UI/visually-hidden.css');
+/*Правила для страницы*/
+.page {
+  display: flex; /*Задайте флекс для верхнего контейнера .page.*/
+  align-items: center; 
+  justify-content: center; /*Расположить блок .content посередине .page.*/
+  inline-size: 1200px;
+  block-size: 100%;
+  margin: auto;
+  color: rgba(217, 217, 217, 1);
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  background-color: #1b1919;
+}
+/*Правила для кнопок на странице*/
+.more-button {
+  max-width: 390px;
+  padding: 5px;
+  margin: 30px 3px 2px 2px;
+}

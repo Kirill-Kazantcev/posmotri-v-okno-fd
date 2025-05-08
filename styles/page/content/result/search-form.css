@@ -1,0 +1,93 @@
+.search-form {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: space-between; /*Расположить элементы .search-form в строку, пропорционально распределить между ними свободное пространство и прижать их к началу контейнера.*/
+    inline-size: 100%;
+    gap: 40px;
+}
+/*fieldset*/
+.search-form__fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: none;
+    /*Создайте с помощью флексбокса строку с двумя элементами — fieldset и кнопкой.
+Расположите чекбоксы в линию с помощью обёртки .search-form__checkbox-list. Используйте display: flex; и gap.
+Сбросьте border у fieldset.*/
+}
+.search-form__fieldset-title {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 4px;
+    line-height: 100%;
+    letter-spacing: 0%; /*Оформите текст элементов .search-form__fieldset-title. Обратите внимание на вес шрифта, размер, отступы.*/
+}
+/*label*/
+.search-form__label {
+    display: inline-flex;
+    width: fit-content;
+    gap: 5px;
+    cursor: pointer; /*Задайте .search-form__label у инпутов для поиска городов и времени суток.
+    Расставьте элементы внутри .search-form__label в линию. Примените свойство display: flex;. Также вам пригодится правило width: fit-content;.*/
+}
+.search-form__label:hover {
+    text-decoration: underline 1px rgba(255, 255, 255, 1);
+    text-underline-offset: 5px;
+}
+.search-form__label:has(:focus-visible) {
+    outline: 1px solid rgba(255, 255, 255, 1);
+    outline-offset: 1px;
+}
+/*textfield*/
+.search-form__textfield {
+    border-top: 1px solid rgba(255, 255, 255, 1);
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    border-left: none;
+    color: currentColor;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    background-color: transparent;
+    appearance: none;
+    inline-size: 225px;
+    block-size: 27px;
+}
+.search-form__textfield:active {
+    outline: 1px solid rgba(255, 255, 255, 1);
+    outline-offset: 1px;
+}
+.search-form__fieldset:focus, 
+.search-form__fieldset:focus-visible  {
+    outline: none;
+}
+/*checkbox*/
+.search-form__checkbox-list {
+    display: flex;
+    gap: 15px;
+}
+.search-form__pseudo-checkbox {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 1);
+    inline-size: 19px;
+    block-size: 19px;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+    content: '';
+    display: block;
+    background-color: rgba(255, 255, 255, 1);
+    inline-size: 15px;
+    block-size: 15px;
+    margin: 1px 0 0 1px;
+}
+.search-form__submit-button
+{
+    padding: 5px;
+    margin-top: 20px;
+}

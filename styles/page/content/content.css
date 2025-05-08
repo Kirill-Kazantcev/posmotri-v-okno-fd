@@ -1,0 +1,13 @@
+/*Компонентный подход - подключаем стили result*/
+@import url('./result/result.css');
+@import url('./result/search-form.css');
+/*Компонентный подход - подключаем стили details*/
+@import url('./details/details.css');
+/*Правила для блока сontent*/
+.content {
+    display: grid;
+    grid-template-areas: 'result details'; /*Задайте грид для .content и пропишите grid-area для всех элементов внутри.*/
+    grid-template-columns: 711px 399px;
+    gap: 30px; /*Задать горизонтальные размеры .content и отступы между его элементами.*/
+    margin: 0 30px;
+  }

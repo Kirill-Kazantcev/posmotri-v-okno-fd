@@ -1,3 +1,4 @@
+/* Скрыть содержимое */
 .visually-hidden {
     position: absolute;
     inline-size: 1px;

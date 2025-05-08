@@ -1,0 +1,17 @@
+/*Лист*/
+.content__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px; /*Создайте вертикальные отступы между элементами .content__list-item. Используйте свойство gap.*/
+  }
+  .content__list-container {
+    height: 298px; /*Установить вертикальный размер для .content__list-container и добавить скролл при переполнении. */ 
+    overflow-y: scroll; /*Скроллбар (полоса прокрутки) скрывать не нужно, он уже стилизован в соответствии с макетом.*/
+    overflow-x: hidden;
+    position: relative;
+  }
+  .content__list-item {
+    padding: 0 3px 0 3px;
+  }
