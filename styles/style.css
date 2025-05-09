@@ -127,6 +127,7 @@ ol {
 .content__list-container {
   position: relative;
   height: 298px;
+  min-width: 399px;
   overflow: auto;
 }
 /*Титул из листа*/
