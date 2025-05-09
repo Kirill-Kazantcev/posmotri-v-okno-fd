@@ -90,7 +90,7 @@ ol {
   inline-size: 1px;
   block-size: 1px;
   overflow: hidden;
-  clip: rect(0, 0,0,0);
+  clip: rect(0, 0, 0, 0);
   clip-path: inset(50%);
   white-space: nowrap;
 }
@@ -121,15 +121,13 @@ ol {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 30px;
+  margin: 0 3px 0 2px;
 }
 /*Элементы листа*/
 .content__list-container {
   position: relative;
   height: 298px;
-  overflow: auto; /**/
-}
-.content__list-item {
-  margin: 0 3px 0 2px;
+  overflow: auto;
 }
 /*Титул из листа*/
 .title {
@@ -254,9 +252,9 @@ ol {
   cursor: pointer;
   color: inherit;
 }
-.search-form__label:hover  .search-form__label-text {
-  text-decoration: underline 1px rgba(255, 255, 255, 1); 
-  text-underline-offset: 5px; 
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline 1px rgba(255, 255, 255, 1);
+  text-underline-offset: 5px;
 }
 /*label модификаторы*/
 .search-form__label:has(:focus-visible) {
